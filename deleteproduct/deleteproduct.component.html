@@ -1,0 +1,17 @@
+<h1 align="center">Deleting a Product</h1>
+    
+    <form novalidate autocomplete="off" name="addproduct">
+
+    <div class="form-group" align="center">
+        <table>
+                <tr>
+                        <td><label class="control-label">Product Name:<span style="color:red;">*</span></label></td>
+                        <td><input class="form-control" type="text" name="product name" id="prodname" placeholder="Enter Product name " [(ngModel)]="prodname" maxlength="30"/></td>
+                </tr>
+        </table>       
+    </div>
+
+    
+    <div align="center">
+        <a><button type="button" id="submit" onclick="deleteprod()">DELETE</button></a>
+    </div>

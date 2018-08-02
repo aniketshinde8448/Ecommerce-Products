@@ -1,0 +1,54 @@
+<div align="center"><img src="assets/3447.png" alt="Iauro Systems" width="160" height="80"></div>
+        <br>
+        <h1 align="center">Admin Login Page</h1>
+        
+        <form novalidate autocomplete="off">
+        <div class="form-group" align="center">
+          <table>
+              <tr>
+                      <td><label class="control-label">Admin Email:<span style="color:red;">*</span></label></td>
+                      <td><input class="form-control" type="text" name="adminemail" id="adminemail" placeholder="Enter Admin email " [(ngModel)]="username" maxlength="30" (keyup)="onUseremailKeyUp($event)"></td>
+              </tr>
+          </table>       
+        </div>
+        
+        <div class="form-group" align="center">
+          <table>
+              <tr>
+                      <td><label class="control-label">Password:<span style="color:red;">*</span></label></td>
+                      <td><input class="form-control" type="password" name="password" id="password" placeholder="Enter Password " [(ngModel)]="password" maxlength="10" (keyup)="onPasswordKeyUp($event)"/></td>
+              </tr>
+          </table>       
+        </div>
+        
+        <div align="center">
+          <button type="button" (click)="adminpage()">Login</button>
+        </div>
+
+        <br>
+        <div align="center">
+          <a href ='http://localhost:4200/login'>Back To Login Page</a>
+        </div>
+        
+        
+        <!--<div align="center">
+                <table>
+                  <tr>
+                      <td>Username:</td>
+                      <td><input type="text" placeholder="Username"></td>
+                  </tr>
+                  <tr>
+                      <td>Password:</td>
+                      <td><input type="password" placeholder="Password"></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                    <button type="submit" name="Submit">Login</button>
+                    </td>
+                  </tr>
+                </table>-->
+        <div align="center">
+                
+                </div>
+        

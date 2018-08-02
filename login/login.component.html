@@ -1,0 +1,42 @@
+<div align="center"><img src="assets/3447.png" alt="Iauro Systems" width="160" height="80"></div>
+    <br>
+    <h1 align="center">Login Page</h1>
+    
+    <form novalidate autocomplete="off" name="loginform" [formGroup]="myform">
+    <div class="form-group" align="center">
+      <table>
+          <tr>
+                  <td><label class="control-label">User email:<span style="color:red;">*</span></label></td>
+                  <td><input class="form-control" type="text" name="useremail" id="useremail" formControlName="useremail" required="required" placeholder="Enter User Email " maxlength="30" (keyup)="onUseremailKeyUp($event)"></td>
+          </tr>
+      </table>       
+    </div>
+    
+    <div class="form-group" align="center">
+      <table>
+          <tr>
+                  <td><label class="control-label">Password:<span style="color:red;">*</span></label></td>
+                  <td><input class="form-control" type="password" name="password" id="password" formControlName="password" required="required" placeholder="Enter Password " maxlength="10" (keyup)="onPasswordKeyUp($event)"/></td>
+          </tr>
+      </table>       
+    </div>
+    
+    <div align="center">
+      <button type="button" (click)="userpage();">Login</button>
+    </div>
+    
+    
+    
+    <div align="center">
+            <a href="http://localhost:4200">Want to signup?</a>
+            <br>
+            <br>
+            <a href="http://localhost:4200/adminlogin">If You Are Admin click here !!!</a>
+            <br>
+            <br>
+            
+            </div>
+    
+          </form>
+  
+  

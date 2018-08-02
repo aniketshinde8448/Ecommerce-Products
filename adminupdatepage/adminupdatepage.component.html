@@ -1,0 +1,55 @@
+<div align="center" id="oldprod"></div>
+
+    <div align="left"><img src="assets/3447.png" alt="Iauro Systems" width="140" height="90"></div>
+    
+    <br>
+
+    <form name="product display" align="center">
+                <div id="products" align="center"></div>
+        </form>
+
+    <br>
+
+    <h1 align="center">New Product Details</h1>
+    
+    <form novalidate autocomplete="off" name="addproduct">
+
+    <div class="form-group" align="center">
+        <table>
+                <tr>
+                        <td><label class="control-label">Product Name:<span style="color:red;">*</span></label></td>
+                        <td><input class="form-control" type="text" name="product name" id="prodname"  [(ngModel)]="prodname" maxlength="30" (keyup)="onProdnameKeyUp($event)"/></td>
+                </tr>
+        </table>       
+    </div>
+
+    <div class="form-group" align="center">
+        <table>
+                <tr>
+                        <td><label class="control-label">Product Description:<span style="color:red;">*</span></label></td>
+                        <td><input class="form-control" type="text" name="product desc" id="proddesc"  [(ngModel)]="proddesc" maxlength="30" (keyup)="onProddescKeyUp($event)"/></td>
+                </tr>
+        </table>       
+    </div>
+
+    <div class="form-group" align="center">
+        <table>
+                <tr>
+                        <td><label class="control-label">Product Category:<span style="color:red;">*</span></label></td>
+                        <td><input class="form-control" type="text" name="product cat" id="prodcat"  [(ngModel)]="prodcat" maxlength="30" (keyup)="onProdcatKeyUp($event)"/></td>
+                </tr>
+        </table>       
+    </div>
+
+    <div class="form-group" align="center">
+        <table>
+                <tr>
+                        <td><label class="control-label">Product Price:<span style="color:red;">*</span></label></td>
+                        <td><input class="form-control" type="text" name="product price" id="prodprice"  [(ngModel)]="prodprice" maxlength="30" (keyup)="onProdpriceKeyUp($event)"/></td>
+                </tr>
+        </table>       
+    </div>
+
+    <div align="center">
+        <a><button type="button" id="submit" (click)="updtproduct()">UPDATE</button></a>
+    </div>

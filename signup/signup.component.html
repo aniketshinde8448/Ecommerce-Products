@@ -1,0 +1,44 @@
+
+
+<div align="center"><img src="assets/3447.png" alt="Iauro Systems" width="140" height="90"></div>
+    
+  <h1 align="center">SIGN UP</h1>
+
+    <form novalidate autocomplete="off" name="signupform" [formGroup]="myform">
+
+    <div class="form-group" align="center">
+        <table>
+                <tr>
+                        <td><label class="control-label">Username:<span style="color:red;">*</span></label></td>
+                        <td><input class="form-control" type="text" name="username" id="username" formControlName="username" placeholder="Enter Username " required="required" maxlength="30" (keyup)="onUsernameKeyUp($event)"/></td>
+                </tr>
+        </table>       
+    </div>
+            
+    <div class="form-group" align="center">
+        <table>
+                <tr>
+                    <td><label class="control-label">Password:<span style="color:red;">*</span></label></td>
+                    <td><input class="form-control" type="password" name="password" id="password" formControlName="password" required="required" placeholder="Enter Password " maxlength="15" (keyup)="onPasswordKeyUp($event)"/></td>
+                </tr>
+        </table>       
+    </div>
+    
+    <div class="form-group" align="center">
+        <table>
+            <tr>
+                    <td><label class="control-label">User Emailid:<span style="color:red;">*</span></label></td>
+                    <td><input class="form-control" type="email" name="useremail" id="useremail" formControlName="useremail" required="required"  placeholder="Enter User Emailid " maxlength="50" (keyup)="onUseremailKeyUp($event)" required="required"/></td>
+            </tr>
+        </table>       
+    </div>
+
+
+    <div align="center">
+        <a routerlink="login"><button type="button" id="submit" (click)="submit();" >Submit</button></a>
+        <br>
+        <a href="http://localhost:4200/login">Back to login page !!</a>
+    </div>
+
+    
+    

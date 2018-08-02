@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+
+input.txt {
+    border: 0;
+    padding: 1em;
+    width :80%;
+    margin-bottom: 2em;
+}
+
+input.btn {
+    border: 0;
+    padding: 1em;
+    background: white;
+    color: lightblue;
+}
+
+h1 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+    background: white;
+}
